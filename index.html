@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Seputar Buah-buahan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url("images/background.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(63, 195, 34, 0.9);
+            color: white;
+            text-align: center;
+            padding: 0.9rem;
+            box-sizing: border-box;
+            z-index: 1000;
+            border-radius: 0 0 8px 8px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            gap: 2rem;
+            flex-grow: 1;
+            padding-top: 8rem; /* Beri ruang untuk navbar tetap */
+        }
+
+        article {
+            flex: 3;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buah {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid rgba(34, 193, 195, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buah img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        aside {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside img {
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        footer {
+            text-align: center;
+            background-color: rgba(63, 195, 34, 0.9);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+        .buah h3 {
+            scroll-margin-top: 11rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Informasi Buah Sehat dan Segar</h1>
+        <nav>
+            <ul>
+                <li><a href="TUGAS_SUBMISSION.html">Beranda</a></li>
+                <li><a href="TUGAS_SUBMISSION.html">List Buah</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Article Section -->
+        <article>
+            <h2>Kenali Berbagai Buah Sehat untuk Kesehatanmu</h2>
+            <p>Buah-buahan adalah salah satu sumber terbaik vitamin, mineral, dan serat yang dibutuhkan oleh tubuh. Mengonsumsi buah secara teratur dapat meningkatkan kesehatan secara keseluruhan, memperkuat sistem imun, dan menjaga berat badan ideal. Mari kita lihat beberapa buah yang sering kita konsumsi sehari-hari.</p> 
+            <div class="buah">
+                <h3 id="pisang">Pisang</h3>
+                <img src="images/pisang.jpeg" alt="Pisang" style="width:500px;height:400px;">
+                <p>Pisang mengandung banyak kalium yang baik untuk kesehatan jantung dan mengurangi risiko tekanan darah tinggi. Pisang juga membantu pencernaan karena kaya akan serat.</p>
+            </div>
+
+            <div class="buah">
+                <h3 id="apel">Apel</h3>
+                <img src="images/apel.jpeg" alt="Apel" style="width:500px;height:400px;">
+                <p>Apel terkenal karena mengandung serat pektin yang baik untuk kesehatan pencernaan. Selain itu, apel juga kaya akan vitamin C yang dapat meningkatkan kekebalan tubuh.</p>
+            </div>
+
+            <div class="buah">
+                <h3 id="alpukat">Alpukat</h3>
+                <img src="images/alpukat.jpeg" alt="Alpukat" style="width:500px;height:400px;">
+                <p>Alpukat makanan tinggi serat dan kalium yang dapat mengoptimalkan fungsi pencernaan. Di samping itu, alpukat juga termasuk dalam makanan rendah fruktosa, sehingga tidak berisiko menimbulkan penumpukan gas dan aman dikonsumsi oleh orang dengan riwayat penyakit asam lambung.</p>
+            </div> 
+            
+            <div class="buah">
+                <h3 id="mangga">Mangga</h3>
+                <img src="images/mangga.jpeg" alt="Mangga" style="width:500px;height:400px;">
+                <p> mangga mengandung berbagai nutrisi penting yang dapat membantu menjaga kesehatan tubuh kita. Mangga kaya akan vitamin C. Vitamin ini adalah antioksidan kuat yang membantu melindungi tubuh dari kerusakan akibat radikal bebas.</p>
+            </div>
+            
+            <div class="buah">
+                <h3 id="pepaya">Pepaya</h3>
+                <img src="images/pepaya.jpeg" alt="Pepaya" style="width:500px;height:400px;">
+                <p>Pepaya memiliki banyak manfaat kesehatan, termasuk melancarkan pencernaan berkat enzim papain, serta mencegah sembelit dengan kandungan seratnya. Buah ini kaya akan vitamin C yang memperkuat sistem kekebalan tubuh, menjaga kesehatan kulit, dan mencegah kerusakan akibat radikal bebas. Selain itu, pepaya mendukung kesehatan jantung dengan membantu menurunkan tekanan darah dan kolesterol, menjadikannya pilihan buah yang baik untuk kesehatan tubuh secara keseluruhan.</p>
+            </div>
+
+            <div class="buah">
+                <h3 id="melon">Melon</h3>
+                <img src="images/melon.jpeg" alt="Melon" style="width:500px;height:400px;">
+                <p>Melon memiliki berbagai manfaat kesehatan, terutama karena kandungan air yang tinggi, yang membantu menjaga tubuh tetap terhidrasi. Buah ini kaya akan vitamin C dan antioksidan, yang dapat meningkatkan sistem kekebalan tubuh dan melindungi sel-sel dari kerusakan akibat radikal bebas. Melon juga mengandung serat yang baik untuk pencernaan, serta kalium yang dapat membantu menjaga tekanan darah dan kesehatan jantung. Selain itu, melon rendah kalori, sehingga cocok untuk dikonsumsi dalam program diet sehat.</p>
+            </div>
+
+            <div class="buah">
+                <h3 id="anggur">Anggur</h3>
+                <img src="images/anggur.jpeg" alt="Anggur" style="width:500px;height:400px;">
+                <p>Anggur kaya akan antioksidan, seperti resveratrol dan flavonoid, yang membantu melindungi tubuh dari kerusakan akibat radikal bebas dan dapat menurunkan risiko penyakit jantung. Buah ini juga mengandung vitamin C dan K yang mendukung sistem kekebalan tubuh serta kesehatan tulang. Anggur memiliki sifat antiinflamasi dan dapat membantu melancarkan aliran darah, sehingga baik untuk kesehatan pembuluh darah dan jantung. Selain itu, serat dan air dalam anggur membantu pencernaan, dan kandungan kalorinya yang rendah menjadikannya pilihan camilan sehat.</p>
+            </div>
+        </article>
+
+        <!-- Aside Section -->
+        <aside>
+            <h2>List Buah:</h2>
+            <ul>
+                <li><a href="#pisang">Pisang</a> <img src="images/pisang.jpeg" alt="Pisang" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>                
+                <li><a href="#apel">Apel</a> <img src="images/apel.jpeg" alt="Apel" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>                
+                <li><a href="#alpukat">Alpukat</a> <img src="images/alpukat.jpeg" alt="Alpukat" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>                
+                <li><a href="#mangga">Mangga</a> <img src="images/mangga.jpeg" alt="Mangga" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>                
+                <li><a href="#pepaya">Pepaya</a> <img src="images/pepaya.jpeg" alt="Pepaya" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>
+                <li><a href="#melon">Melon</a> <img src="images/melon.jpeg" alt="Melon" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>
+                <li><a href="#anggur">Anggur</a> <img src="images/anggur.jpeg" alt="Anggur" style ="width: 100px; height: 60px; display: block; margin-right: auto;"></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+            <a href="https://github.com/EnggarAP/" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com/in/enggar-ardi-prastiawan-b997b2321/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
